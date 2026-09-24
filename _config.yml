@@ -1,0 +1,48 @@
+# Jupyter Book 1.x configuration — https://jupyterbook.org/en/stable/customize/config.html
+title: "From Paper to Data: Chord Recognition with CQT, Templates and HMMs"
+author: "<your name>"
+copyright: "2026"
+logo: ""
+only_build_toc_files: true
+exclude_patterns: [_build, Thumbs.db, .DS_Store, "**.ipynb_checkpoints", .pytest_cache, data, chordlab, tests, results, "*.egg-info"]
+
+execute:
+  execute_notebooks: "off"      # notebooks are committed with their outputs; 8 and 9 need the RWC audio
+
+repository:
+  url: https://github.com/YOUR-GITHUB-USER/chord-recognition-book   # <-- change after forking
+  path_to_book: ""
+  branch: main
+
+launch_buttons:
+  colab_url: "https://colab.research.google.com"
+  notebook_interface: "classic"
+
+html:
+  use_repository_button: true
+  use_issues_button: true
+  use_edit_page_button: false
+  home_page_in_navbar: true
+  extra_footer: |
+    <p>Code MIT · text CC BY 4.0 · derived annotations CC BY-NC 4.0 · RWC Music Database © AIST, CC BY-NC 4.0 via Zenodo.</p>
+
+bibtex_bibfiles:
+  - references.bib
+
+sphinx:
+  config:
+    bibtex_reference_style: author_year
+    html_show_copyright: false
+    mathjax3_config:
+      tex:
+        macros: {}
+  extra_extensions:
+    - sphinx.ext.mathjax
+
+parse:
+  myst_enable_extensions:
+    - amsmath
+    - dollarmath
+    - colon_fence
+    - linkify
+    - substitution

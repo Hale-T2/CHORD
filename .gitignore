@@ -1,0 +1,16 @@
+# downloaded data — never commit RWC audio (size and CC BY-NC license)
+data/
+# Jupyter Book output
+_build/
+# scratch files written by the notebooks
+notebooks/toy_cd.wav
+toy_cd.wav
+results/rwc_p_results.csv
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+.venv/
+.ipynb_checkpoints/
+.DS_Store

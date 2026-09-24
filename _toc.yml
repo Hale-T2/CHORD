@@ -1,0 +1,25 @@
+# Table of contents — https://jupyterbook.org/en/stable/structure/toc.html
+format: jb-book
+root: intro
+parts:
+  - caption: Getting started
+    chapters:
+      - file: notebooks/00_setup
+      - file: notebooks/01_finding_and_fetching_data
+  - caption: "The front end (paper §II)"
+    chapters:
+      - file: notebooks/02_waveform_to_pitch
+      - file: notebooks/03_stft_vs_cqt
+      - file: notebooks/04_chromagram
+  - caption: "Two decoders (paper §III)"
+    chapters:
+      - file: notebooks/05_template_matching
+      - file: notebooks/06_hmm_viterbi
+  - caption: "Ground truth and evaluation (paper §IV)"
+    chapters:
+      - file: notebooks/07_ground_truth_from_midi
+      - file: notebooks/08_evaluation_rwc_r
+      - file: notebooks/09_scaling_rwc_p
+  - caption: Appendix
+    chapters:
+      - file: references
