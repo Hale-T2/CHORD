@@ -10,7 +10,7 @@ execute:
   execute_notebooks: "off"      # notebooks are committed with their outputs; 8 and 9 need the RWC audio
 
 repository:
-  url: https://github.com/YOUR-GITHUB-USER/chord-recognition-book   # <-- change after forking
+  url: https://github.com/Hale-T2/CHORD   # <-- change after forking
   path_to_book: ""
   branch: main
 

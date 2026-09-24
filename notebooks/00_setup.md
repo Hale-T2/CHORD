@@ -11,7 +11,7 @@ Downloads land in the Colab session and disappear when it ends. To keep the RWC 
 ## Option B — locally
 
 ```bash
-git clone https://github.com/YOUR-GITHUB-USER/chord-recognition-book.git
+git clone https://github.com/Hale-T2/CHORD.git
 cd chord-recognition-book
 python -m venv .venv && source .venv/bin/activate     # or: conda create -n chords python=3.11
 pip install -e .                                       # installs chordlab and its dependencies

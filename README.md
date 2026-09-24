@@ -39,7 +39,7 @@ _config.yml, _toc.yml, references.bib          Jupyter Book configuration
 ## Quick start
 
 ```bash
-git clone https://github.com/YOUR-GITHUB-USER/chord-recognition-book.git
+git clone https://github.com/Hale-T2/CHORD.git
 cd chord-recognition-book
 pip install -e .            # chordlab + dependencies (Python ≥ 3.10; needs libsndfile for soundfile)
 pytest -q                   # 35 tests, a few seconds
@@ -53,9 +53,9 @@ Data goes to `./data/` (override with the `CHORDLAB_DATA` environment variable).
 ## Deploying the site
 
 1. Fork / push this repository to GitHub.
-2. Replace the placeholder `YOUR-GITHUB-USER/chord-recognition-book` everywhere:
+2. Replace the placeholder `Hale-T2/CHORD` everywhere:
    ```bash
-   grep -rl "YOUR-GITHUB-USER" --include="*.ipynb" --include="*.yml" --include="*.md" . | xargs sed -i 's#YOUR-GITHUB-USER/chord-recognition-book#<user>/<repo>#g'
+   grep -rl "YOUR-GITHUB-USER" --include="*.ipynb" --include="*.yml" --include="*.md" . | xargs sed -i 's#Hale-T2/CHORD#<user>/<repo>#g'
    ```
    and fill in `author` in `_config.yml` and the copyright line in `LICENSE`.
 3. In the repository settings, set **Pages → Source** to *GitHub Actions*.
