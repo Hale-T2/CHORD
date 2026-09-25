@@ -85,4 +85,7 @@ To build locally: `pip install -r requirements-docs.txt && jupyter-book build .`
 
 RWC Music Database © AIST (Goto et al. 2002, 2003, 2006), re-released as RWC 2.0 by Balke et al. (2026).
 Built with librosa, mir_eval, pretty_midi and Jupyter Book. Inspired by Meinard Müller's FMP notebooks and
-by Barış Bozkurt's Turkish *Python ile Ses İşlemeye Giriş*.
+by Barış Bozkurt's Turkish *Python ile Ses İşlemeye Giriş*. Prof. Barış Bozkurt prepared these notes for a 
+work shop on Audio Signal Processing for which I registered, but could not attend. Prof. Barış Bozkurt published 
+these notebooks in 2023. I have been following his project on assessing Music Student performance and I started 
+working on his python books which led me to Prof. Müller's Music Signal Processing book and FMP Notebooks. 
