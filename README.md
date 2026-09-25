@@ -4,12 +4,11 @@ A Jupyter Book (+ a small Python package) that follows one paper all the way to 
 
 > H. Türeli, *"CHORD: Comparing HMM and Constant-Q Representation for Decoding Harmony"*, 2026.
 
-Ten notebooks take a student from the paper's equations to a working chord recogniser, to the
+I developed ten notebooks take a student from the paper's equations to a working chord recogniser, to the
 RWC Music Database on Zenodo (re-released open in 2026), to a reconstructed ground truth, to a
 reproduction of the paper's Table I and Fig. 4 — and then beyond the paper.
 
-**Live site:** `https://YOUR-GITHUB-USER.github.io/chord-recognition-book/` (after deploying, see below)
-
+**Live site:** `https://github.com/Hale-T2/CHORD` 
 ## Contents
 
 ```
@@ -72,15 +71,15 @@ To build locally: `pip install -r requirements-docs.txt && jupyter-book build .`
 
 * **Ground truth.** The curated `rwc-annotations` repository has chord labels for RWC-P only. The RWC-R
   labels in `derived_annotations/` were derived from the aligned MIDI (notebook 07 explains and validates
-  the recipe: ≈ 73 % frame agreement with human labels on RWC-P). The paper does not state how its
-  RWC-R labels were produced — confirm with the author if you want to match Table I exactly.
-* **Two small numeric slips in the paper**, handled gently in notebooks 02 and 03: Eq. (9) gives
+  the recipe: ≈ 73 % frame agreement with human labels on RWC-P). The paper does not state how 
+  RWC-R labels were produced — confirm with the me if you want to match Table I exactly.
+* **I had two small numeric slips in the paper**, which are handled gently in notebooks 02 and 03: Eq. (9) gives
   Q = 1/(2^(1/12) − 1) ≈ 16.82 (the paper prints 17.034), and the equal-tempered fifth deviates from
   3:2 by ≈ 0.11 % / 2 cents (the paper says 0.17 %).
 * **Licenses.** Code MIT; text CC BY 4.0; derived annotations CC BY-NC 4.0; RWC audio CC BY-NC 4.0
   (downloaded at runtime, cite the publications in `references.bib`); the paper is © IEEE — the book
   restates equations and compares against reported numbers but does not reproduce text or figures.
-  Ask the author before reusing any figure.
+  Ask me via email haley.tureli@gmail.com before reusing any figure.
 
 ## Acknowledgements
 
